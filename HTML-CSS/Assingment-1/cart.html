@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <!-- === Header Section === -->
+    <header class="header-area">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Furniro" width="150px">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
+                    <li class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li onclick="sidemenu" class="bars"><a href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <div class="header-rightside-icon">
+                <div class="h-r-icons">
+                    <div><img src="./image/account-icon.png" alt="" width="30px"></div>
+                    <div><img src="./image/search-icon.png" alt="" width="30px"></div>
+                    <div><img src="./image/heart-icon.png" alt="" width="30px"></div>
+                    <div><img src="./image/cart-icon.png" alt="" width="30px"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- === Header Section END === -->
+    <!-- =================================== -->
+    <!-- === Hero Section === -->
+    <section class="hero-area">
+        <div class="hero-container">
+            <div class="hero-inner-text-container">
+                <div class="hero-heading">
+                    <img src="./image/Meubel House_Logos-05.png" alt="logo">
+                    <h2>Cart</h2>
+                </div>
+                <div class="hero-inner-text">
+                    <div class="home-text">
+                        <span> <b>Home ></b> </span>
+                        <span>Shop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === Hero Section END === -->
+    <!-- =================================== -->
+    <!-- === Cart checkout List === -->
+    <section class="checkout-list-area">
+        <div class="cart-container">
+            <!-- Cart Header -->
+            <div class="cart-header">
+                <div>Product</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Subtotal</div>
+                <div></div>
+            </div>
+
+            <!-- Cart Item -->
+            <div class="cart-item">
+                <img src="./image/Asgaard-sofa-3.png" alt="Product">
+                <div>Asgaard Sofa</div>
+                <div>Rs. 250,000.00</div>
+                <input type="number" value="1">
+                <div><strong>Rs. 250,000.00</strong></div>
+                <div class="cart-trash-box"><img src="./image/ant-design_delete-filled3.png" alt="" ></div>
+            </div>
+
+        </div>
+        <div class="cart-checkout">
+            <!-- Cart Totals -->
+            <div class="cart-total">
+                <h2>Cart Totals</h2>
+                <p class="subtotal"><strong>Subtotal:</strong> Rs. 250,000.00</p>
+                <p class="total"><strong>Total: </strong>Rs. 250,000.00</p>
+                <a href="#" class="checkout-btn">Check Out</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- === Cart checkout List END === -->
+    <!-- =================================== -->
+    <!-- === service section === -->
+    <section class="service-area">
+        <div class="service-container">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/trophy.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>High Quality</h4>
+                    <p>crafted from top materials</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/guarantee.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>Warranty Protection</h4>
+                    <p>Over 2 years</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/shipping.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>Free Shipping</h4>
+                    <p>Order over 150 $</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/customer-support.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>24 / 7 Support</h4>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- === service section END === -->
+    <!-- =================================== -->
+    <!-- === Footer === -->
+    <footer class="footer-area">
+        <div class="footer-container">
+            <div class="f-address-container">
+                <div class="f-brand-title">
+                    <h2>Funiro</h2>
+                </div>
+                <div class="f-address">
+                    <p>400 University Drive Suite 200 Coral
+                        <br>Gables,
+                        <br>FL 33134 USA
+                    </p>
+                </div>
+            </div>
+            <div class="f-links">
+                <div class="f-all-title">
+                    <h2>Links</h2>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f-help">
+                <div class="f-all-title">
+                    <h2>Help</h2>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newslatter">
+                <div class="f-all-title">
+                    <h2>Newslatter</h2>
+                </div>
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email">
+                    <button class="f-email-sub-btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="all-rights-reverved">
+            <p>2025 furino. All rights reverved</p>
+        </div>
+    </footer>
+    <!-- === Footer END === -->
+    <!-- =================================== -->
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/checkout.css">
+    <title>CheckOut</title>
+</head>
+
+<body>
+    <!-- === Header Section === -->
+    <header class="header-area">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Furniro" width="150px">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
+                    <li class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li onclick="sidemenu" class="bars"><a href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <div class="header-rightside-icon">
+                <div class="h-r-icons">
+                    <div><img src="./image/account-icon.png" alt="" width="30px"></div>
+                    <div><img src="./image/search-icon.png" alt="" width="30px"></div>
+                    <div><img src="./image/heart-icon.png" alt="" width="30px"></div>
+                    <div><img src="./image/cart-icon.png" alt="" width="30px"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- === Header Section END === -->
+    <!-- =================================== -->
+    <!-- === Hero Section === -->
+    <section class="hero-area">
+        <div class="hero-container">
+            <div class="hero-inner-text-container">
+                <div class="hero-heading">
+                    <img src="./image/Meubel House_Logos-05.png" alt="logo">
+                    <h2>Checkout</h2>
+                </div>
+                <div class="hero-inner-text">
+                    <div class="home-text">
+                        <span> <b>Home ></b> </span>
+                        <span>Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === Hero Section END === -->
+    <!-- =================================== -->
+    <section class="billing-details-area">
+        <h1>Billing details</h1>
+        <div class="billing-details-container">
+            <div class="billing-form-area">
+                <form action="" class="billing-form">
+                    <div class="form-name">
+                        <div class="fname-div">
+                            <label for="fname">First Name: </label>
+                            <input type="text" id="fname" name="firstname">
+                        </div>
+                        <div class="lname-div">
+                            <label for="lname">Last Name: </label>
+                            <input type="text" id="lname" name="lasttname">
+                        </div>
+                    </div>
+                    <label for="company">Company Name(optional) </label>
+                    <input type="text" id="company" name="companyname">
+                    <label for="country">Country/Region</label>
+                    <select name="countryName" id="country">
+                        <option value="">Bangladesh</option>
+                        <option value="">Saudi Arabia</option>
+                        <option value="">Turkey</option>
+                        <option value="">Afghanistan</option>
+                        <option value="">Morocco</option>
+                    </select>
+                    <label for="street">Street Address </label>
+                    <input type="text" id="street" name="streetAddress">
+                    <label for="city">Town/City </label>
+                    <input type="text" id="city" name="townCity">
+                    <label for="province">Province</label>
+                    <select name="Provice" id="province">
+                        <option value="">Dhaka</option>
+                        <option value="">Khulna</option>
+                        <option value="">Sylhet</option>
+                        <option value="">Rangpur</option>
+                    </select>
+                    <label for="zip">Zip Code </label>
+                    <input type="number" id="zip" name="ZipCode">
+                    <label for="phone">Phone </label>
+                    <input type="number" id="phone" name="Phone">
+                    <label for="mail">Email </label>
+                    <input type="email" id="mail" name="Email"><br>
+                    <input type="text" name="AditionalDetails" id="info" placeholder="Aditional Details">
+                </form>
+            </div><br>
+            <div class="billing-product-details-area">
+                <table class="billing-price-table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td class="product-name">Asgaard sofa <mark> x 1</mark></td>
+                        <td>Rs. 250,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>Rs. 250,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="total-price">Rs. 250,000.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- =================================== -->
+    <!-- === service section === -->
+    <section class="service-area">
+        <div class="service-container">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/trophy.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>High Quality</h4>
+                    <p>crafted from top materials</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/guarantee.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>Warranty Protection</h4>
+                    <p>Over 2 years</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/shipping.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>Free Shipping</h4>
+                    <p>Order over 150 $</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="./image/customer-support.png" alt="">
+                </div>
+                <div class="service-text">
+                    <h4>24 / 7 Support</h4>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- === service section END === -->
+    <!-- =================================== -->
+    <!-- === Footer === -->
+    <footer class="footer-area">
+        <div class="footer-container">
+            <div class="f-address-container">
+                <div class="f-brand-title">
+                    <h2>Funiro</h2>
+                </div>
+                <div class="f-address">
+                    <p>400 University Drive Suite 200 Coral
+                        <br>Gables,
+                        <br>FL 33134 USA
+                    </p>
+                </div>
+            </div>
+            <div class="f-links">
+                <div class="f-all-title">
+                    <h2>Links</h2>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f-help">
+                <div class="f-all-title">
+                    <h2>Help</h2>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newslatter">
+                <div class="f-all-title">
+                    <h2>Newslatter</h2>
+                </div>
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email">
+                    <button class="f-email-sub-btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="all-rights-reverved">
+            <p>2025 furino. All rights reverved</p>
+        </div>
+    </footer>
+    <!-- === Footer END === -->
+    <!-- =================================== -->
+</body>
+
+</html>
