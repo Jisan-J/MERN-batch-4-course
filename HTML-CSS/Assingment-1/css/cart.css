@@ -150,7 +150,7 @@ html {
 .hero-inner-text-container {
     height: 100%;
     width: 100%;
-    background: #0000005a;
+    background: #ffffff5f;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,25 +164,23 @@ html {
     align-items: center;
 }
 
+
 .hero-heading img {
-    display: none;
+    width: 50px;
 }
 
 .hero-heading h2 {
     text-align: center;
-    font-size: clamp(2rem, 8vw, 5rem);
-    border: 8px solid var(--secondary-color);
+    font-size: 40px;
     width: 100%;
     min-width: fit-content;
-    color: var(--secondary-color);
-    padding: 5vh;
+    color: var(--text-secondary-color);
 }
 
-.home-text span {
+.home-text span, span a{
+    text-decoration: none;
     font-size: clamp(0.8rem, 4vw, 1.5rem);
-    color: var(--secondary-color);
-
-
+    color: var(--text-primary-color-color);
 }
 
 /* === Hero Responsive === */
@@ -216,11 +214,18 @@ html {
         color: var(--text-primary-color);
     }
 
-    .home-text span {
-        font-size: clamp(0.5rem, 2vw, 0.8rem);
+    .home-text span > a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: clamp(0.5rem, 2vw, 1rem);
         color: var(--text-secondary-color);
+    }
 
-
+    .home-text > span {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        color: var(--text-secondary-color);
     }
 }
 
@@ -230,8 +235,11 @@ html {
         font-size: clamp(4rem, 6vw, 10rem);
     }
 
-    .home-text span {
-        font-size: clamp(1rem, 2vw, 3rem);
+    .home-text span{
+        font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    }
+    .home-text span > a {
+        font-size: clamp(0.5rem, 1vw, 1.5rem);
     }
 }
 
@@ -240,6 +248,7 @@ html {
 /* ===================================================================================== */
 /* === cart checkout section === */
 .cart-container {
+    height: fit-content;
     width: 70%;
     background: white;
     padding: 20px;
@@ -309,7 +318,7 @@ html {
 /* Desktop Layout */
 @media (min-width: 768px) {
     .checkout-list-area {
-        height: 60vh;
+        height: 80vh;
         display: flex;
         justify-content: space-around;
     }
@@ -385,18 +394,17 @@ html {
 /* ===================================================================================== */
 /* === Service section === */
 .service-area {
-    min-height: fit-content;
-    height: 35vh;
+    min-height: 35vh;
+    height: fit-content;
     width: 100%;
     background: var(--secondary-color);
     text-align: center;
 }
 
 .service-container {
-    height: 100%;
+    height: fit-content;
     width: 100%;
     padding: 20px;
-    min-height: fit-content;
     display: flex;
     gap: 5vh;
     flex-direction: column;
@@ -410,16 +418,17 @@ html {
 }
 
 .service-img img {
-    width: 8vw;
+    width: 7vw;
 }
 
 /* === Service section Responsive=== */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .service-area {
         text-align: left;
     }
 
     .service-container {
+        min-height: 35vh;
         flex-direction: row;
         gap: 6vh;
         justify-content: space-evenly;
@@ -449,8 +458,7 @@ html {
 /* === Footer Section === */
 
 .footer-area {
-    height: 90vh;
-    min-height: fit-content;
+    height: fit-content;
     width: 100%;
     text-align: center;
 }
@@ -492,6 +500,9 @@ html {
 }
 
 .f-email-sub-btn {
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     background: transparent;
     border: none;
@@ -499,7 +510,7 @@ html {
 
 hr {
     width: 85%;
-    margin: 0 auto;
+    margin: 5vh auto;
     color: var(--text-third-color);
 }
 
@@ -510,15 +521,13 @@ hr {
 /* === Footer Responsive === */
 @media only screen and (min-width: 768px) {
     .footer-area {
-        min-height: fit-content;
-        height: 65vh;
+        height: fit-content;
         width: 100%;
         text-align: center;
     }
 
     .footer-container {
-        min-height: fit-content;
-
+        height: fit-content;
         margin: 0 auto;
         padding: 40px;
         display: flex;
@@ -542,6 +551,45 @@ hr {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .footer-container {
+        line-height: 10vh;
+    }
+
+    .f-brand-title h2 {
+        font-size: clamp(1.5vw, 2vw, 2.5vw);
+
+    }
+
+    .f-list ul li a {
+        font-size: clamp(1.1vw, 1.3vw, 1.5vw);
+
+    }
+
+    .f-all-title h2 {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form input {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form button {
+        font-size: clamp(1.3vw, 1.2vw, 1.5vw);
+    }
+
+    .f-address p {
+        font-size: clamp(1vw, 1.2vw, 1.5vw);
+        color: #666666;
+    }
+
+    .f-address {
+        line-height: 3vh;
+    }
+    .all-rights-reverved {
+    font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+}
+
 /* === Footer Responsive END === */
 /* === Footer Section END === */
-

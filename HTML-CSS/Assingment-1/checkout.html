@@ -21,6 +21,7 @@
             <nav class="navbar">
                 <ul>
                     <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
                     <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
                     <li class="hideOnMobile"><a href="about.html">About</a></li>
                     <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
@@ -49,7 +50,7 @@
                 </div>
                 <div class="hero-inner-text">
                     <div class="home-text">
-                        <span> <b>Home ></b> </span>
+                        <span> <a href="./index.html">Home</a></span>
                         <span>Checkout</span>
                     </div>
                 </div>
@@ -58,9 +59,9 @@
     </section>
     <!-- === Hero Section END === -->
     <!-- =================================== -->
-    <section class="billing-details-area">
+    <section class="billing-area">
         <h1>Billing details</h1>
-        <div class="billing-details-container">
+        <div class="billing-container">
             <div class="billing-form-area">
                 <form action="" class="billing-form">
                     <div class="form-name">
@@ -105,9 +106,9 @@
             </div><br>
             <div class="billing-product-details-area">
                 <table class="billing-price-table">
-                    <tr>
-                        <th>Product</th>
-                        <th>Subtotal</th>
+                    <tr class="total-price-heading">
+                        <td>Product</td>
+                        <td>Subtotal</td>
                     </tr>
                     <tr>
                         <td class="product-name">Asgaard sofa <mark> x 1</mark></td>
@@ -122,7 +123,35 @@
                         <td class="total-price">Rs. 250,000.00</td>
                     </tr>
                 </table>
+
+                <!-- ==============ldmsdk a design bad tumi w3 dekho -->
+                <form class="billing-checkout-payment-area">
+                    <!-- First checklist item -->
+                    <div class="payment-method-container">
+                        <input type="radio" name="payment" value="" id="payment-method1" class="pay1">
+                        <label for="payment-method1" class="pay1">Direct Bank Transfer</label>
+                        <div class="description1">
+                            Make your payment directly into our bank account. Please use your Order ID as the payment
+                            reference. Your order will not be shipped until the funds have cleared in our account.
+                        </div>
+                    </div>
+                    <div class="payment-method-container">
+                        <input type="radio" name="payment" value="" id="payment-method2" class="pay2">
+                        <label for="payment-method2" class="pay2">Cash On Delivery</label>
+                        <div class="description2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iure.
+                        </div>
+                    </div>
+                    <!-- Add more items as needed -->
+                </form>
+                <div class="delivery-privacy">
+                    <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <b>privacy policy.</b></p>
+                </div>
+                <div class="order-button-container">
+                    <div class="btn"><a href="#">Place order</a></div>
+                </div>
             </div>
+           
         </div>
     </section>
     <!-- =================================== -->
@@ -213,13 +242,13 @@
                 <div class="f-all-title">
                     <h2>Newslatter</h2>
                 </div>
-                <form action="">
+                <form action="" class="f-mail-sub-form">
                     <input type="email" name="email" placeholder="Enter Your Email" id="email">
                     <button class="f-email-sub-btn">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
-        <hr>
+        <hr class="f-border">
         <div class="all-rights-reverved">
             <p>2025 furino. All rights reverved</p>
         </div>

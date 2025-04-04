@@ -16,12 +16,15 @@ html {
     --text-secondary-color: #3A3A3A;
     --text-third-color: #666666;
 }
- * h2 {
+
+* h2 {
     color: var(--text-primary-color);
 }
-*  p {
+
+* p {
     color: var(--text-third-color);
 }
+
 ::-webkit-scrollbar {
     width: 2px;
 }
@@ -82,9 +85,11 @@ html {
     .header-container {
         font-size: clamp(1rem, 2vw, 1.5vw);
     }
+
     .navbar ul li {
         margin: 0 1vw;
     }
+
     .navbar .hideOnMobile {
         display: block;
     }
@@ -103,24 +108,28 @@ html {
         width: 22px;
     }
 }
-@media only screen and (min-width: 1200px){
-    .logo img{
+
+@media only screen and (min-width: 1200px) {
+    .logo img {
         width: 12vw;
     }
+
     .header-container {
         height: 8vh;
         font-size: clamp(1.2rem, 2vw, 1.5vw);
     }
+
     .navbar ul li {
         margin: 0 1vw;
     }
-    
+
     .h-r-icons>div img {
         display: flex;
         margin: 0 1vw;
         width: 2vw;
     }
 }
+
 /* === Header Responsive === END */
 /* === Header Section Style END === */
 /* ===================================================================================== */
@@ -233,20 +242,31 @@ html {
         background: var(--secondary-color);
         backdrop-filter: blur(1.5px);
         min-height: 60vh;
+        max-height: fit-content;
         min-width: 45vw;
         border-radius: 10px;
         margin-right: 4vw;
     }
 
+    .h-text-card-inner {
+        transform: translateY(10vh);
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .hero-heading h1 {
+
         color: var(--primary-color);
-        font-size: clamp(1rem, 8vw, 3rem);
+        font-size: clamp(2vw, 2.5vw, 3vw);
     }
 
     .pera p {
         color: var(--primary-color);
-        font-size: clamp(.70rem, 2vw, 1.3rem);
+        font-size: clamp(1vw, 1.1vw, 1.2vw);
+    }
 
+    .h-buy-btn a {
+        font-size: clamp(0.5vw, 0.7vw, 1vw);
     }
 
 
@@ -306,7 +326,8 @@ html {
 
 .our-product-heading h2 {
     text-align: center;
-    font-size: clamp(1rem, 8vw, 2.2rem);
+    font-size: 25px;
+    margin-bottom: 2.5vh;
 }
 
 .our-product-container {
@@ -424,7 +445,9 @@ html {
 
 /* ===Our Product Responsive === */
 @media only screen and (min-width: 992px) {
-
+    .our-product-heading h2 {
+        font-size: clamp(1vw, 2vw, 2.5vw);
+    }
     .our-product-container {
         width: 95%;
         margin: 0 auto;
@@ -527,6 +550,27 @@ html {
 
     .b-room-text {
         flex: 1;
+    }
+
+    .b-room-images {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .beautiful-room-area{
+        background: var(--secondary-color);
+        height: fit-content;
+        width: 100%;
+    }
+    .beautiful-room-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .b-room-text {
+        flex: 1;
+       /* transform: translateX(10vw); */
     }
 
     .b-room-images {
@@ -638,7 +682,9 @@ html {
         justify-content: space-around;
         align-items: center;
     }
-
+    .funiroFurniture-heading h2{
+        font-size: clamp(1vw, 1.8vw, 2vw);
+    }
     .funiro-items1 .item1 img {
         display: block;
     }
@@ -716,8 +762,7 @@ html {
 /* === Footer Section === */
 
 .footer-area {
-    height: 90vh;
-    min-height: fit-content;
+    height: fit-content;
     width: 100%;
     text-align: center;
 }
@@ -731,10 +776,12 @@ html {
     flex-direction: column;
     justify-content: center;
 }
-.f-address p{
+
+.f-address p {
     font-size: clamp(12px, 2vw, 14px);
     color: #666666;
 }
+
 .f-all-title h2 {
     font-size: 18px;
     font-weight: 400;
@@ -757,15 +804,20 @@ html {
 }
 
 .f-email-sub-btn {
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     background: transparent;
     border: none;
 }
-hr{
+
+hr {
     width: 85%;
-    margin: 0 auto;
+    margin: 5vh auto;
     color: var(--text-third-color);
 }
+
 .all-rights-reverved {
     display: none;
 }
@@ -773,15 +825,13 @@ hr{
 /* === Footer Responsive === */
 @media only screen and (min-width: 768px) {
     .footer-area {
-        min-height: fit-content;
-        height: 65vh;
+        height: fit-content;
         width: 100%;
         text-align: center;
     }
 
     .footer-container {
-        min-height: fit-content;
-
+        height: fit-content;
         margin: 0 auto;
         padding: 40px;
         display: flex;
@@ -805,7 +855,46 @@ hr{
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .footer-container {
+        line-height: 10vh;
+    }
+
+    .f-brand-title h2 {
+        font-size: clamp(1.5vw, 2vw, 2.5vw);
+
+    }
+
+    .f-list ul li a {
+        font-size: clamp(1.1vw, 1.3vw, 1.5vw);
+
+    }
+
+    .f-all-title h2 {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form input {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form button {
+        font-size: clamp(1.3vw, 1.2vw, 1.5vw);
+    }
+
+    .f-address p {
+        font-size: clamp(1vw, 1.2vw, 1.5vw);
+        color: #666666;
+    }
+
+    .f-address {
+        line-height: 3vh;
+    }
+
+    .all-rights-reverved {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+}
+
 /* === Footer Responsive END === */
 /* === Footer Section END === */
-
-/* ===================================================================================== */

@@ -315,7 +315,10 @@ html {
 .cart-fram button:hover {
     background: var(--secondary-color);
 }
-
+.add-cart-btn a{
+    color: black;
+    text-decoration: none;
+}
 
 /* sofa details */
 .sofa-details-table{
@@ -623,8 +626,7 @@ html {
 /* === Footer Section === */
 
 .footer-area {
-    height: 90vh;
-    min-height: fit-content;
+    height: fit-content;
     width: 100%;
     text-align: center;
 }
@@ -638,10 +640,12 @@ html {
     flex-direction: column;
     justify-content: center;
 }
-.f-address p{
+
+.f-address p {
     font-size: clamp(12px, 2vw, 14px);
     color: #666666;
 }
+
 .f-all-title h2 {
     font-size: 18px;
     font-weight: 400;
@@ -664,15 +668,20 @@ html {
 }
 
 .f-email-sub-btn {
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     background: transparent;
     border: none;
 }
-hr{
+
+hr {
     width: 85%;
-    margin: 0 auto;
+    margin: 5vh auto;
     color: var(--text-third-color);
 }
+
 .all-rights-reverved {
     display: none;
 }
@@ -680,15 +689,13 @@ hr{
 /* === Footer Responsive === */
 @media only screen and (min-width: 768px) {
     .footer-area {
-        min-height: fit-content;
-        height: 65vh;
+        height: fit-content;
         width: 100%;
         text-align: center;
     }
 
     .footer-container {
-        min-height: fit-content;
-
+        height: fit-content;
         margin: 0 auto;
         padding: 40px;
         display: flex;
@@ -712,7 +719,45 @@ hr{
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .footer-container {
+        line-height: 10vh;
+    }
+
+    .f-brand-title h2 {
+        font-size: clamp(1.5vw, 2vw, 2.5vw);
+
+    }
+
+    .f-list ul li a {
+        font-size: clamp(1.1vw, 1.3vw, 1.5vw);
+
+    }
+
+    .f-all-title h2 {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form input {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form button {
+        font-size: clamp(1.3vw, 1.2vw, 1.5vw);
+    }
+
+    .f-address p {
+        font-size: clamp(1vw, 1.2vw, 1.5vw);
+        color: #666666;
+    }
+
+    .f-address {
+        line-height: 3vh;
+    }
+    .all-rights-reverved {
+    font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+}
+
 /* === Footer Responsive END === */
 /* === Footer Section END === */
-
-/* ===================================================================================== */

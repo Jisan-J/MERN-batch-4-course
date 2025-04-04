@@ -140,26 +140,29 @@ html {
 .hero-inner-text-container {
     height: 100%;
     width: 100%;
-    background: #0000005a;
+    background: #ffffff5f;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.hero-heading h2{
-    text-align: center;
-    font-size: clamp(2rem, 8vw, 5rem);
-    border: 8px solid var(--secondary-color);
-    width: 50vw;
-    min-width: fit-content;
-    color: var(--secondary-color);
-    padding: 5vh;
+
+.hero-heading img {
+    width: 50px;
 }
-.home-text span{
+
+.hero-heading h2 {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    min-width: fit-content;
+    color: var(--text-secondary-color);
+}
+
+.home-text span, span a{
+    text-decoration: none;
     font-size: clamp(0.8rem, 4vw, 1.5rem);
-    color: var(--secondary-color);
-
-
+    color: var(--text-primary-color-color);
 }
 
 /* === Hero Responsive === */
@@ -179,11 +182,18 @@ html {
         min-width: fit-content;
         color: var(--text-primary-color);
     }
-    .home-text span{
-        font-size: clamp(0.5rem, 4vw, 1.25rem);
+    .home-text span > a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: clamp(0.5rem, 2vw, 1rem);
         color: var(--text-secondary-color);
-    
-    
+    }
+
+    .home-text > span {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        color: var(--text-secondary-color);
     }
 }
 @media only screen and (min-width: 1200px){
@@ -192,7 +202,10 @@ html {
         font-size: clamp(4rem, 6vw, 10rem);
     }
     .home-text span{
-        font-size: clamp(1rem, 2vw, 3rem);
+        font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    }
+    .home-text span > a {
+        font-size: clamp(0.5rem, 1vw, 1.5rem);
     }
 }
 /* === Hero Responsive END === */
@@ -450,6 +463,19 @@ html {
         width: 95%;
         margin: 0 auto;
     }
+    .home-text span > a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        color: var(--text-secondary-color);
+    }
+
+    .home-text > span {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        color: var(--text-secondary-color);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -459,6 +485,12 @@ html {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
+    }
+    .home-text span{
+        font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    }
+    .home-text span > a {
+        font-size: clamp(0.5rem, 1vw, 1.5rem);
     }
 }
 
@@ -470,64 +502,72 @@ html {
 
 
 /* === Service section === */
-.service-area{
-    min-height: fit-content;
-    height: 35vh;
+.service-area {
+    min-height: 35vh;
+    height: fit-content;
     width: 100%;
     background: var(--secondary-color);
     text-align: center;
 }
-.service-container{
-    height: 100%;
+
+.service-container {
+    height: fit-content;
     width: 100%;
     padding: 20px;
-    min-height: fit-content;
     display: flex;
     gap: 5vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.service-item{
+
+.service-item {
     display: flex;
     flex-direction: column;
 }
-.service-img img{
-    width: 8vw;
+
+.service-img img {
+    width: 7vw;
 }
+
 /* === Service section Responsive=== */
-@media only screen and (min-width: 600px){
-    .service-area{
+@media only screen and (min-width: 768px) {
+    .service-area {
         text-align: left;
     }
-    .service-container{
+
+    .service-container {
+        min-height: 35vh;
         flex-direction: row;
         gap: 6vh;
         justify-content: space-evenly;
         align-items: center;
     }
-    .service-item{
+
+    .service-item {
         flex-direction: row;
         align-items: center;
         gap: 2vw;
     }
-    .service-img img{
+
+    .service-img img {
         width: 5vw;
     }
 }
+
 @media only screen and (min-width: 1200px) {
-    .service-text h4{
+    .service-text h4 {
         font-size: clamp(1rem, 4vh, 1.2rem);
     }
 }
+
 /* === Service section Responsive END=== */
 /* === Service section END === */
 /* ===================================================================================== */
 /* === Footer Section === */
 
 .footer-area {
-    height: 90vh;
-    min-height: fit-content;
+    height: fit-content;
     width: 100%;
     text-align: center;
 }
@@ -541,10 +581,12 @@ html {
     flex-direction: column;
     justify-content: center;
 }
-.f-address p{
+
+.f-address p {
     font-size: clamp(12px, 2vw, 14px);
     color: #666666;
 }
+
 .f-all-title h2 {
     font-size: 18px;
     font-weight: 400;
@@ -567,15 +609,20 @@ html {
 }
 
 .f-email-sub-btn {
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     background: transparent;
     border: none;
 }
-hr{
+
+hr {
     width: 85%;
-    margin: 0 auto;
+    margin: 5vh auto;
     color: var(--text-third-color);
 }
+
 .all-rights-reverved {
     display: none;
 }
@@ -583,15 +630,13 @@ hr{
 /* === Footer Responsive === */
 @media only screen and (min-width: 768px) {
     .footer-area {
-        min-height: fit-content;
-        height: 65vh;
+        height: fit-content;
         width: 100%;
         text-align: center;
     }
 
     .footer-container {
-        min-height: fit-content;
-
+        height: fit-content;
         margin: 0 auto;
         padding: 40px;
         display: flex;
@@ -615,7 +660,45 @@ hr{
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .footer-container {
+        line-height: 10vh;
+    }
+
+    .f-brand-title h2 {
+        font-size: clamp(1.5vw, 2vw, 2.5vw);
+
+    }
+
+    .f-list ul li a {
+        font-size: clamp(1.1vw, 1.3vw, 1.5vw);
+
+    }
+
+    .f-all-title h2 {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form input {
+        font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+
+    .f-mail-sub-form button {
+        font-size: clamp(1.3vw, 1.2vw, 1.5vw);
+    }
+
+    .f-address p {
+        font-size: clamp(1vw, 1.2vw, 1.5vw);
+        color: #666666;
+    }
+
+    .f-address {
+        line-height: 3vh;
+    }
+    .all-rights-reverved {
+    font-size: clamp(1.3vw, 1.5vw, 1.6vw);
+    }
+}
+
 /* === Footer Responsive END === */
 /* === Footer Section END === */
-
-/* ===================================================================================== */
