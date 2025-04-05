@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+nav{
+    background: orangered;
+}
+nav ul{
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 40px;
+}
+nav ul li a{
+    padding: 12px 0;
+    text-decoration: none;
+}
+.drop-ul {
+    background: orangered;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    display: none;
+    height: 190px;
+    width: 200px;
+    line-height: 40px;
+}
+.drop-ul li {
+    width: 100%;
+    display: block;
+}
+.drop-ul li:hover{
+    background: black;
+}
+.drop-ul li a {
+    padding-left: 2vw;
+    display: block;
+}
+.wordpress-drop:hover .drop-ul{
+    display: block;
+}
+
+.sec-drop-ul {
+    background: orangered;
+    position: absolute;
+    top: 128px;
+    left: 160px;
+    display: none;
+    height: 190px;
+    width: 200px;
+    line-height: 40px;
+}
+.tutorials-drop:hover .sec-drop-ul{
+    display: block;
+}
