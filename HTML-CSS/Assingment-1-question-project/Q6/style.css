@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    color: rgb(232, 232, 232);
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(14, 12, 29);
+}
+
+/* .arrow{
+    width: 50px;
+    background: tomato;
+    border: medium solid white;
+    border-width: 10px 0px 10px 10px;
+    border-color: transparent transparent transparent rgb(255, 255, 255);
+} */
+
+.timeline-area {
+    min-height: fit-content;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.timeline-area::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    background: rgb(41, 41, 60);
+    width: 5px;
+    top: 50px;
+    bottom: 0;
+    left: 50px;
+
+}
+
+.primary h4 {
+    display: inline-block;
+    background: rgb(0, 136, 255);
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.danger h4 {
+    display: inline-block;
+    background: palevioletred;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.success h4 {
+    display: inline-block;
+    background: rgb(60, 164, 121);
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.container {
+    margin: 30px auto;
+}
+
+.c-blue::before {
+    content: '';
+    background: rgb(0, 136, 255);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 28px;
+    top: 12px;
+    z-index: 1;
+}
+
+.fa-face-laugh-wink {
+    font-size: 32px;
+    position: absolute;
+    left: 37px;
+    top: 20px;
+    z-index: 2;
+}
+
+.c-pink::before {
+    content: '';
+    background: palevioletred;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    top: 36.2%;
+    left: 28px;
+    z-index: 1;
+}
+
+.fa-face-grin-tears {
+    font-size: 32px;
+    position: absolute;
+    left: 33px;
+    top: 37.4%;
+    z-index: 2;
+}
+
+.c-green::before {
+    content: '';
+    background: rgb(60, 164, 121);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    top: 71%;
+    left: 28px;
+    z-index: 1;
+}
+
+.fa-face-grin-hearts {
+    font-size: 32px;
+    position: absolute;
+    left: 36px;
+    top: 72.2%;
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    width: min(60%, 550px);
+    padding: 20px 40px;
+    background: rgb(41, 41, 60);
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    border: medium solid white;
+    border-width: 15px 15px 15px 0px;
+    border-color: transparent rgb(41, 41, 60) transparent transparent;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .timeline-area {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        position: relative;
+        left: 10%;
+        width: 60%;
+
+    }
+
+    .content p {
+        font-size: clamp(12px, 14px, 16px);
+    }
+}
