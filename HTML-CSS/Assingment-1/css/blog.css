@@ -318,7 +318,7 @@ html {
     display: flex;
     gap: 1vw;
     width: 100%;
-    padding: 5vh 0;
+    padding: 5vh 0 0 0;
 }
 .recent-post-container > div {
     margin: 5vh auto;
@@ -342,8 +342,12 @@ html {
 .recent-post-section ::-webkit-scrollbar-thumb {
     width: 5px;
     background: var(--primary-color); 
+   
 }
 /* Recent Post END */
+.blog-card-container > div{
+    padding: 1vh 0;
+}
 .post-date-tag {
     display: flex;
 }
@@ -410,9 +414,6 @@ html {
     }
     .blog-text{
         width: 100%;
-    }
-    .blog-card-container > div{
-        padding: 1vh 0;
     }
 }
 @media only screen and (min-width: 768px) {
